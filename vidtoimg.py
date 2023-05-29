@@ -33,7 +33,7 @@ current_frame = 0
 while (True):
 	ret, frame = cap.read()
  
-	if ret == True:
+	if ret == True and current_frame < 201:
 		name = './original_frames/frame' + str(current_frame) + '.jpg'
 		print("Criating... " + name)
  
